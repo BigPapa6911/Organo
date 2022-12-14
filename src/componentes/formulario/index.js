@@ -18,6 +18,9 @@ const Formulario = (props) => {
             imagem,
             cargo
         })
+        setImagem("");
+        setCargo("");
+        setNome("");
     }
 
     return (
@@ -40,11 +43,11 @@ const Formulario = (props) => {
                     alterado={valor=>setImagem(valor)}
                 />
                 <Cargos 
-                obrigatorio={true} 
-                label="Cargos" 
-                itens={props.cargos}
-                valor={cargo}
-                alterado={valor=>setCargo(valor)} 
+                    obrigatorio={true} 
+                    label="Cargos" 
+                    itens={props.cargos}
+                    valor={cargo}
+                    alterado={valor=>setCargo(valor)} 
                 />
                 <Botao>
                     Adicionar integrante
