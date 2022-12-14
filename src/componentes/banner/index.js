@@ -3,7 +3,10 @@ import "./banner.css";
 const Banner= ()=>{
     return(
         <header className="banner">
-            <img src="imagens/banner.png" alt="banner principal"/>
+            <div className="texto">
+                <h1>Discord Server</h1>
+                <h2>Integrantes do meu servidor</h2>
+            </div>
         </header>
     )
 }

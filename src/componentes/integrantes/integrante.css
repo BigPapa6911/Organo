@@ -1,0 +1,13 @@
+.integrantes{
+    text-align: center;
+    padding: 32px;
+}
+
+.integrantes h3{
+    font-size: 40px;
+    border-bottom: 4px solid #9400D3;
+    color: #9400D3;
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.16);
+    display: inline-block;
+    padding-bottom: 8px;
+}

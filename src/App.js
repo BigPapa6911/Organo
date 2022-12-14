@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Banner from './componentes/banner';
 import Formulario from './componentes/formulario';
+import Integrantes from './componentes/integrantes';
 import Rodape from './componentes/rodape';
 import Times from './componentes/time';
 
@@ -47,6 +48,7 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario cargos={cargos.map(cargo => cargo.nome)} integranteCadastrado={integrante => novoIntegrante(integrante)} />
+      <Integrantes />
       {cargos.map(time => <Times key={time.nome}
         nome={time.nome}
         cor1={time.corPrimaria}
