@@ -4,7 +4,7 @@ import Cargos from '../cargos'
 import Botao from '../botao'
 import { useState } from 'react'
 
-const Formulario = (props) => {
+const Formulario = (props,id) => {
 
     const [nome, setNome] = useState('');
     const [imagem, setImagem] = useState('');
@@ -16,7 +16,8 @@ const Formulario = (props) => {
         props.integranteCadastrado({
             nome,
             imagem,
-            cargo
+            cargo,
+            id
         })
         setImagem("");
         setCargo("");
