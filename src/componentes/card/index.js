@@ -1,10 +1,10 @@
 import { AiFillDelete, AiFillHeart, AiOutlineHeart } from "react-icons/ai"
 import "./card.css"
 
-const Card = ({ nome, imagem, cargo, corDeFundo, deletar, id, favorito,favoritar }) => {
+const Card = ({ nome, imagem, cargo, corDeFundo, deletar, id, favorito, setFavorito}) => {
 
-    function aoFavoritar(id) {
-        favoritar(id);
+    function likeDislike(){
+        setFavorito(id)
     }
 
     return (
@@ -25,9 +25,10 @@ const Card = ({ nome, imagem, cargo, corDeFundo, deletar, id, favorito,favoritar
                 <h4>{nome}</h4>
                 <h5>{cargo}</h5>
                 <div className="favoritar">
-                    {favorito
-                        ? <AiFillHeart size={25} onClick={aoFavoritar} />
-                        : <AiOutlineHeart size={25} onClick={aoFavoritar} />
+                    {favorito 
+                        ? <AiFillHeart size={25} onClick={likeDislike}/>
+                        : <AiOutlineHeart size={25} onClick={likeDislike}/>
+                        
                     }
                 </div>
             </div>

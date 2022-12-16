@@ -1,7 +1,7 @@
 import Card from "../card";
 import "./time.css"
 
-const Times = ({cor2,cor1,nome,integrantes,deletar,favoritar}) => {
+const Times = ({cor2,cor1,nome,integrantes,deletar,setFavorito}) => {
 
     return (
 
@@ -22,7 +22,8 @@ const Times = ({cor2,cor1,nome,integrantes,deletar,favoritar}) => {
                         cargo={integrante.cargo}
                         imagem={integrante.imagem}
                         deletar={deletar}
-                        favoritar={favoritar}
+                        setFavorito={setFavorito}
+                        favorito={integrante.favorito}
                     />)
                 }
             </div>
